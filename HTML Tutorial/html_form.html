@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Form</title>
+
+    <style>
+        .text-field {
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .radio-button {
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+
+        .checkbox {
+            background-color: lightcyan;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-field">
+        <h1> Text Field </h1>
+        <form>
+            <label for="fname"> First name: </label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname"> Last name: </label><br>
+            <input type="text" id="'lname" name="lname"><br><br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+    <div class="radio-button">
+        <h1>Radio Button</h1>
+        <form>
+            <p>
+                Choose Your Favourite Web Languages: 
+            </p>
+            <input type="radio" id="html" name="fav_lang" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_lang" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_lang" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </form>
+    </div>
+
+    <div class="checkbox">
+        <h1>Check Box</h1>
+        <form>
+            <p> Types of vehicles :  </p>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+        </form>
+    </div>   
+    
+    
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Semantic</title>
+    <style>
+        nav{
+            background-color: gray;
+            justify-content: center;
+        }
+
+        nav a{
+            display: inline-block;
+            color: aliceblue;
+            text-align: center;
+            size: 28px;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover{
+            background-color: black;
+        }
+
+        .section1{
+            background-color:antiquewhite;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .all-browsers {
+            border: 1px solid black;
+            margin-top: 10px;
+            padding: 5px;
+            background-color: lightgray;
+        }
+        
+        .all-browsers > h1, .browser {
+            margin: 10px;
+            padding: 5px;
+        }
+        
+        .browser {
+            background: white;
+        }
+        
+        .browser > h2, p {
+            margin: 4px;
+            font-size: 90%;
+        }
+
+        .aside-check{
+            background-color: blanchedalmond;
+            padding: 20px;
+            margin-top: 15px;
+            border: 1px solid black;
+        }
+
+        aside{
+            background-color: lightgray;
+            width: 40%;
+            float: right;
+            font-style: italic;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .arpita{
+            background-color: lightcyan;
+            padding: 40px;
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+
+        .summary{
+            display: block;
+        }
+        .panda-div{
+            max-width: 100%;
+            background-color: lightpink;
+            border: 1px solid black;
+            margin-top: 20px;
+        }
+        .panda{
+            max-width: 400px;
+            margin-top: 20px;
+        }
+
+        footer{
+            margin-top: 50px;
+            background-color: lightblue;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section class="section1">
+        <h1> HTML <code>section</code> Element</h1>
+
+        <p>The section element defines a section in a document.
+
+            According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."
+            
+            Examples of where a section element can be used:
+            <ul>
+                <li>Chapters</li>
+                <li>Introduction</li>
+                <li>News items</li>
+                <li>Contact information</li>
+            </ul>
+            
+            A web page could normally be split into sections for introduction, content, and contact information.
+
+        </p>
+
+    </section>
+
+    <article class="all-browsers">
+
+        <h1>Most Popular Browsers</h1>
+        <article class="browser">
+          <h2>Google Chrome</h2>
+          <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+        </article>
+
+        <article class="browser">
+          <h2>Mozilla Firefox</h2>
+          <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+
+        <article class="browser">
+          <h2>Microsoft Edge</h2>
+          <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article>
+
+    </article>
+
+    <article class="aside-check">
+        <p>The article element specifies independent, self-contained content.
+
+            An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.
+        </p>
+            <aside>
+                <h4>aside Element</h4>
+                <p>The aside element defines some content aside from the content it is placed in (like a sidebar).
+                    The aside content should be indirectly related to the surrounding content.</p>
+            </aside>
+
+        <p>
+            Examples of where the article element can be used:
+            <ul>
+                <li>Forum posts</li>
+                <li>Blog posts</li>
+                <li>User comments</li>
+                <li>Product cards</li>
+                <li>Newspaper articles</li>
+            </ul>
+        </p>
+
+    </article>
+
+    <div class="arpita">
+        <details>
+            <summary>About Arpita</summary>
+            <p> She is quite dangerous.</p>
+        </details>
+    </div>
+
+    <div class="panda-div">
+        <figure>
+            <img class="panda" src="panda_small.jpg" alt="panda">
+            <figcaption>Figure: panda saying Hi</figcaption>
+        </figure>
+    </div>
+    
+
+    <footer>
+        <p>Author : Horipriya Das Arpita </p>
+        <p><a href="mailto:horipriya288@gmail.com">horipriya288@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
