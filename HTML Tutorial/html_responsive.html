@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .left{
+            background-color: aquamarine;
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+
+        .middle{
+            background-color: antiquewhite;
+            padding: 20px;
+            float: left;
+            width: 60%;
+        }
+
+        .right{
+            background-color:aliceblue;
+            padding: 20px;
+            float: left;
+            width: 20%;
+        }
+
+        @media screen and (max-width: 800px) {
+            .left, .middle, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="panda.jpg" style="max-width: 100%;"> -->
+
+    <div class="left">
+        <p>Left Content</p>
+    </div>
+
+    <div class="middle">
+        <p>Middle Content</p>
+    </div>
+
+    <div class="right">
+        <p>Right Content</p>
+    </div>
+
+    <picture>
+        <source srcset="panda_small.jpg" media="(max-width: 600px)">
+        <source srcset="panda.jpg" media="(max-width: 1500px)">
+        <source srcset="panda.jpg">
+        <img src="panda_small.jpg" alt="Panda" style="width: auto;">
+    </picture>
+
+    <h1 style="font-size: 10vw;">Hi Arpitaa... Kemon Acho? </h1>
+
+</body>
+</html>

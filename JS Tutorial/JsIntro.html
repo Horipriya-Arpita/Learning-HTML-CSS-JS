@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Introduction</title>
+    <link rel="icon" type="x-icon" href="favicon.ico">
+
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333333;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover {
+          background-color: #111111;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    
+    <div class="first" style="background-color: aliceblue">
+
+        <h2> Touch this button to display Date and Time </h2>
+
+        <button type="button" onclick="document.getElementById('line').innerHTML = Date()"> 
+        Click Me</button>
+
+        <p id="line"> this paragraph will turn into date and time </p>
+
+    </div>
+
+
+    <div class="second" style="background-color: antiquewhite">
+        
+        <h3>You can turn the light off and on by clicking these two buttons</h3>
+        
+        <img id = "light" src="light_off.png" style="width: 100px; height: inherit">
+        
+        <button type="button" onclick="document.getElementById('light').src='light_on.png'">Turn On</button> 
+
+        <button type="button" onclick="document.getElementById('light').src='light_off.png'">Turn Off</button>
+
+    </div>
+
+
+    <div class="third" style="background-color: rgb(206, 243, 243);">
+        
+        <h3>Changing Font size : </h3>
+        <p id="p1">This is paragraph no 1 and I will change it's font size by clicking this button. </p>
+
+        <button type="button" onclick="document.getElementById('p1').style.fontSize = '30px'"> Click me</button>
+
+    </div>
+
+    <div class="fourth" style="background-color: rgb(198, 209, 244);">
+        
+        <h3>Hiding text : </h3>
+        <p id="p2">This is paragraph no 2 and I will hide this text by clicking this button. </p>
+
+        <button type="button" onclick="document.getElementById('p2').style.display ='none'"> Click me</button>
+
+    </div>
+
+    
+    <div class="fifth" style="background-color: rgb(245, 204, 231);">
+        
+        <h3>Showing hidden text : </h3>
+        <p id="p3" style="display: none">This is paragraph no 3 and I will make show the hidden text by clicking this button. </p>
+
+        <button type="button" onclick="document.getElementById('p3').style.display ='block'"> Click me</button>
+
+    </div>
+
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+
+
+    <h2>Navigation Menu</h2>
+    <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+
+    <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+    </ul>
+
+
+</body>
+</html>
