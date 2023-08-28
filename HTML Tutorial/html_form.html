@@ -20,19 +20,38 @@
             background-color: lightcyan;
             padding: 20px;
         }
+
+        .select {
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .textarea {
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+        }
     </style>
+
 </head>
+
 
 <body>
     <div class="text-field">
         <h1> Text Field </h1>
         <form>
-            <label for="fname"> First name: </label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname"> Last name: </label><br>
-            <input type="text" id="'lname" name="lname"><br><br>
-            <input type="submit" value="submit">
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname"> First name: </label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname"> Last name: </label><br>
+                <input type="text" id="'lname" name="lname"><br><br>
+                <input type="submit" value="submit">
+            </fieldset>
+            
         </form>
+
+        <button type="button" onclick="alert('You clicked')"> Click Me </button>
+
     </div>
 
     <div class="radio-button">
@@ -54,6 +73,7 @@
         <h1>Check Box</h1>
         <form>
             <p> Types of vehicles :  </p>
+
             <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
             <label for="vehicle1"> I have a bike</label><br>
             <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
@@ -63,6 +83,52 @@
         </form>
     </div>   
     
-    
+    <div class="select">
+        <h1>Select a Element </h1>
+
+        <form>
+            <p>Choose a car : </p>
+            <select id="cars" name="cars" size="2" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat" selected>Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+            <p>Hold down the Ctrl (windows) button to select multiple options.</p>
+            <input type="submit">
+
+        </form>
+    </div>
+
+
+    <div class="textarea">
+        <h1>Text Area Element</h1>
+
+        <p>Text Area using row and column </p>
+
+        <textarea name="message" rows="10" cols="30">This is the text area...
+        </textarea>
+
+        <p>Text Area using width and height </p>
+
+        <textarea name="message" style="width: 300px; height: 200px;">This is another text area...
+        </textarea>
+    </div>
+
+
+    <div class="datalist">
+        <form>
+            <input list="browsers" name="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </form>
+    </div>
+
+
 </body>
 </html>
