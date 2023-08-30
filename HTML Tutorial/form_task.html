@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * body {
+            background-color: antiquewhite;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Travel reservation form </h1>
+    <h4> * denotes mandatory </h4>
+
+    <form>
+        <label for="fullname">Full name * : </label><br>
+        <input type="text" id="fullname" name="fullname" placeholder="FirstName LastName">
+
+        <br><br>
+        <label for="email">Email address * : </label><br>
+        <input type="email" id="email" name="email" placeholder="EMAIL_ADDRESS">
+
+        <br><br>
+        <label for="selecttour">Select Tour Package * :</label><br>
+        <select id="place" name="place">
+            <option value="Goa">Goa</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Manali">Manali</option>
+            <option value="Darjeeling">Darjeeling</option>
+        </select>
+
+        <br><br>
+        <label for="arrdate">Arrival Date * : </label><br>
+        <input type="date" id="date" name="date">
+
+        <br><br>
+        <label for="person">Number of persons * : </label><br>
+        <input type="number" id="person" name="person" placeholder="UNKNOWN_TYPE">
+
+        <br><br>
+        <label>What would you want to avail? *</label><br>
+        <label for="op1">Boarding  </label>
+        <input type="checkbox" id="op1" name="op1"><br>
+        <label for="op2">Fooding  </label>
+        <input type="checkbox" id="op2" name="op2"><br>
+        <label for="op3">Sight seeing </label>
+        <input type="checkbox" id="op3" name="op3"><br>
+
+        <br>
+        <label for="coupon">Discount Coupon code : </label><br>
+        <input type="text" id="coupon" name="coupon" placeholder="UNKNOWN_TYPE"><br>
+        
+        <br>
+        <label>Terms and conditions * </label><br>
+        <input type="radio" id="agree" name="agree" value="agree">
+        <label for="agree">I agree</label>
+        <input type="radio" id="disagree" name="disagree" value="disagree">
+        <label for="disagree">I disagree </label>
+
+        <br><br>
+        <input type="submit" value="Complete reservation">
+    </form>
+
+</body>
+</html>
