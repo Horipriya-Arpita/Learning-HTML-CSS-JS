@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="form.css"> 
+
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="form-container">
+        <h1>Travel Reservation Form</h1>
+    
+        <form>
+            <h4><span>* </span>denotes mandatory</h4>
+            <div class="form-group">
+                <label for="fullname">Full Name <span>*</span>:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="First Name Last Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address <span>*</span>:</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="place">Select Tour Package <span>*</span>:</label>
+                <select id="place" name="place" required>
+                    <option value="Goa">Goa</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Manali">Manali</option>
+                    <option value="Darjeeling">Darjeeling</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="arrdate">Arrival Date <span>*</span>:</label>
+                <input type="date" id="arrdate" name="arrdate" required>
+            </div>
+
+            <div class="form-group">
+                <label for="person">Number of Persons <span>*</span>:</label>
+                <input type="number" id="person" name="person" placeholder="Number of persons" required>
+            </div>
+
+            <div class="form-group">
+                <label>What Would You Like to Avail? <span>*</span></label><br>
+                <input type="checkbox" id="op1" name="op1">
+                <label for="op1">Boarding</label><br>
+                <input type="checkbox" id="op2" name="op2">
+                <label for="op2">Fooding</label><br>
+                <input type="checkbox" id="op3" name="op3">
+                <label for="op3">Sight Seeing</label>
+            </div>
+
+            <div class="form-group">
+                <label for="coupon">Discount Coupon Code:</label>
+                <input type="text" id="coupon" name="coupon" placeholder="Enter coupon code">
+            </div>
+            
+            <div class="form-group">
+                <label>Terms and Conditions <span>*</span></label><br>
+                <input type="radio" id="agree" name="agree-disagree" value="agree" required>
+                <label for="agree">I Agree</label>
+                <input type="radio" id="disagree" name="agree-disagree" value="disagree">
+                <label for="disagree">I Disagree</label>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Complete Reservation">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
